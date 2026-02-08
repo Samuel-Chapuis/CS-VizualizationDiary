@@ -1,0 +1,50 @@
+\begin{frame}{Week 4 — Height Map}
+\small
+\noindent
+
+  \centering
+
+  \begin{figure}
+    \centering
+    \begin{minipage}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{image/Heightmap.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{image/Heightmap_rendered.png}
+    \end{minipage}
+  \end{figure}
+
+  \vspace{20pt}
+  \rule{\textwidth}{0.5pt}
+  \vspace{20pt}
+  
+  \raggedright
+  
+  \textbf{How I found the visualization (and why I picked it)}\\
+  I founded this visualization while browsing through my minecraft world generation mod. I chose it because it represents in 2D the height of the terrain in a minecraft world. It immediately caught my attention because it condenses complex 3D terrain information into a single, visually appealing chart that illustrates the behavior of the terrain in a minecraft world.
+
+  \vfill % Espace vertical flexible
+  
+  \textbf{What this visualization shows}\\
+  The chart on the left displays the height map of a terrain, where each pixel's intensity corresponds to the elevation at that point. The brighter the pixel, the higher the elevation. The layout allows users to quickly identify areas of high and low elevation, as well as the overall topography of the terrain. The chart on the right is a 3D rendering of the same height map, providing a more immersive view of the terrain's features.
+
+  \vfill % Espace vertical flexible
+  
+  \textbf{Context}\\
+  This visualization is commonly used in game development, particularly in procedural terrain generation, to analyze and design landscapes. It is meant to help developers understand the topography of the terrain they are creating, enabling them to make informed design decisions that enhance the gaming experience. It is also used in graphic design to create some textures and patterns. The design is tailored to the needs of game developers and graphic designers, providing a clear and concise representation of terrain elevation.
+
+  \vfill % Espace vertical flexible
+  
+  \textbf{Design choices}\\
+  The use of only grayscale allows for an intuitive visualization of elevation, while the 2D layout supports analysis of terrain features. The 3D rendering provides a more immersive view of the terrain, allowing users to better understand the spatial relationships between different features. However, the grayscale color scheme may not give all the necessary information about the terrain, such as the type of terrain (e.g., water, grass, mountains) or the presence of specific features (e.g., trees, buildings). Additionally, the 3D rendering may not be accessible to users with certain visual impairments.
+  \vfill % Espace vertical flexible
+  
+  \textbf{Improvements}\\
+  For a more analytical audience, I would add add colors for different types of terrain (e.g., blue for water, green for grass, brown for mountains) to provide more information about the terrain. A second visualization could reveal the distribution of specific features (e.g., trees, buildings) on the terrain. 
+  
+  \vspace{0pt} % Alignement en bas
+
+\end{frame}

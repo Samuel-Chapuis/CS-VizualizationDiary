@@ -1,0 +1,39 @@
+\begin{frame}{Week 5 — Spectrogram Visualization}
+\small
+\noindent
+\begin{minipage}{0.4\textwidth}
+  \centering
+  \rotatebox{90}{\centering\includegraphics[height=0.8\linewidth]{image/Spectrogram.png}}
+  \hspace{20pt}
+  \vrule width 0.5pt%
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+  \centering
+  \setlength{\parskip}{3mm}%
+  \justifying
+  \vspace{0pt} % Alignement en haut
+  
+  \textbf{How I found the visualization (and why I picked it)}\\
+  I encountered this visualization while analyzing laser data for my research project during my past internship. I chose it because it represents the trace of the frequency content of a signal over time. It immediately attracted my attention because it condenses an entire signal's behavior into a single, visually appealing chart.
+  \vfill % Espace vertical flexible
+  
+  \textbf{What this visualization shows}\\
+  The chart displays the spectrogram of a signal, which is a visual representation of the spectrum of frequencies as they vary with time. The x-axis represents time, while the y-axis represents frequency. The color intensity at each point indicates the amplitude of the signal at that particular frequency and time. This format allows users to see how the frequency content of the signal evolves over time, making it easier to identify patterns, trends, and anomalies in the data.
+
+  \vfill % Espace vertical flexible
+  
+  \textbf{Context}\\
+  This visualization is commonly used in signal processing, audio analysis, and various scientific fields to analyze the frequency content of signals. It is meant to provide insights into the behavior of signals over time, helping researchers and analysts make informed decisions based on the frequency characteristics of the data. The design is tailored to the needs of professionals working with time-varying signals, providing a clear and concise representation of frequency content.
+
+  \vfill % Espace vertical flexible
+  
+  \textbf{Design choices}\\
+  The use of a color map to represent amplitude allows for an intuitive visualization of frequency content, while the time-frequency layout supports analysis of signal behavior over time. However, the choice of color map can significantly impact the readability of the spectrogram, and it may not be accessible to color-blind users. Additionally, the resolution of the spectrogram can affect the level of detail visible in the frequency content.
+  \vfill % Espace vertical flexible
+  
+  \textbf{Improvements}\\
+  For a more analytical audience, I would add interactive tooltips showing exact frequency and amplitude values at different points. A second visualization could reveal the time-domain signal for comparison. Finally, alternative color schemes with higher contrast or color-blind-friendly options (e.g., blue–orange) would improve accessibility without losing the scientific context.
+
+  \vspace{0pt} % Alignement en bas
+\end{minipage}
+\end{frame}

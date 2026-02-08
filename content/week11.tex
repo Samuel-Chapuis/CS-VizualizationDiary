@@ -1,0 +1,61 @@
+\begin{frame}{Week 11 — Snow Prediction}
+\small
+\noindent
+\begin{minipage}{0.4\textwidth}
+  \centering
+  \rotatebox{90}{\centering\includegraphics[height=0.8\linewidth]{image/snow.png}}
+  \hspace{20pt}
+  \vrule width 0.5pt%
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+  \centering
+  \setlength{\parskip}{3mm}%
+  \justifying
+  \vspace{0pt} % Alignement en haut
+  
+  \textbf{How I found the visualization (and why I picked it)}\\
+  I encountered this visualization while reading scientific literature related to phase-change phenomena in cold environments (snow and ice modeling).
+  I selected it because it is not a conventional chart (e.g. time series or map), but a space–time diagram, a representation frequently used in physics and geosciences yet rarely discussed from a visualization-design perspective.
+  \vfill % Espace vertical flexible
+  
+  \textbf{What this visualization shows}\\
+  The visualization shows the temporal evolution of the ice layer profile at several horizontal positions $x/H$.
+  \begin{itemize}
+    \item The horizontal axis represents time.
+    \item The vertical axis represents ice layer thickness or vertical position.
+    \item Color encodes the state or magnitude of the ice layer (e.g.\ thickness, presence/absence of ice).
+  \end{itemize}
+  The diagram allows the reader to observe:
+  \begin{itemize}
+    \item Growth and decay phases of the ice layer,
+    \item Temporal synchronization or delay between different horizontal positions,
+    \item The presence of moving fronts or phase-transition boundaries.
+  \end{itemize}
+  \vfill % Espace vertical flexible
+  
+  \textbf{Context}\\
+  This type of visualization is typically used in cryospheric physics, thermodynamics, and phase-change modeling, where understanding the coupling between spatial heterogeneity and temporal evolution is crucial.
+  In the context of ice formation and melting:
+    \begin{itemize}
+      \item Local conditions vary with horizontal position,
+      \item Phase transitions occur over time rather than instantaneously,
+      \item Interfaces between ice and water (or air) are key physical objects.
+    \end{itemize}
+  The space–time diagram is therefore used as an analytical tool rather than a purely descriptive one, aiming to reveal dynamic patterns rather than precise numerical values.
+  
+  \textbf{Design choices}\\
+  Several deliberate design choices are visible:
+  \begin{itemize}
+    \item \textbf{Space–time encoding:} Time is treated as a geometric dimension rather than a sequence of frames, enabling pattern recognition across long durations.
+    \item \textbf{Color mapping:} Color is used to encode the magnitude or state of the ice layer, allowing phase boundaries to appear as continuous structures.
+    \item \textbf{Multiple panels:} Separate subplots for different $x/H$ values reduce overlap and allow comparison between spatial locations.
+    \item \textbf{Continuous representation:} The absence of explicit gridlines emphasizes continuity but reduces precision.
+  \end{itemize}
+  While these choices support qualitative understanding, they prioritize pattern recognition over exact reading.
+  \vfill % Espace vertical flexible
+  
+  \textbf{Improvements}\\
+  Several improvements could enhance both perceptual clarity and analytical usefulness such as, explicit color scale and units, phase boundary highlighting, uncertainty representation or temporal landmarks.
+  \vspace{0pt} % Alignement en bas
+\end{minipage}
+\end{frame}
